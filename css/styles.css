@@ -1,0 +1,133 @@
+html{
+    font-size: 11pt;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --color-default: #525252;
+    --size-font-default: 1.0rem;
+    --height-body: 85vh;
+    --height-top: 10vh;
+    --width-left: 23vw;
+    --margin-left: 2vw;
+    --width-right: 75vw;
+    --width-namecol: 20vw;
+    --position-left-name: 2vw;
+    --width-grade: 53vw;
+    --position-left-grade: 22vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: courier,Osaka;
+    font-size: var(--size-font-default);
+    background-color: white;
+    color: var(--color-default);
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;    
+}
+table, th, td {
+    border: 0.12vw solid #bbbbbb;
+}
+th {
+    color: white;
+    background-color: var(--color-default);
+}
+th, td {
+    padding: 0.6vw;
+}
+
+h1 {
+    font-size: 1.5vw;
+}
+
+#title-left {
+    height: var(--height-top);
+    width: var(--width-left);
+    position: fixed;
+    top: 0;
+    left: var(--margin-left);
+}
+
+#title-right {
+    height: var(--height-top);
+    width: var(--width-right);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#input-part {
+    height: var(--height-body);
+    width: var(--width-left);
+    position: fixed;
+    top: var(--height-top);
+    left: var(--margin-left);
+    padding: 0;
+}
+
+#output-part {
+    height: var(--height-body);
+    width: var(--width-right);
+    position: fixed;
+    top: var(--height-top);
+    right: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+#input-text {
+    outline: none;
+    font-family: courier;
+    height: var(--height-body);
+    width: var(--width-left);
+    color: #999999;
+    opacity: 1.0;
+    border: 0.1vw solid #999999;
+    border-radius: 0.3rem;
+    font-size: var(--size-font-default);
+    padding: 0;
+    /* padding-left: 0.6rem; */
+    /* padding-top: 0.7vh; */
+    /* padding-bottom: 0.4vh; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#name-table {
+    height: var(--height-body);
+    width: var(--width-namecol);
+    position: absolute;
+    left: var(--position-left-name);
+    top: 0;
+    overflow-y: auto;
+}
+
+#grade-region {
+    height: var(--height-body);
+    width: var(--width-grade);
+    position: absolute;
+    left: var(--position-left-grade);
+    top: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+}
+
+#grade-table {
+    width: var(--width-grade);
+    height: var(--height-body);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

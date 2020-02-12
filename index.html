@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/gradebook.js"></script>
+  </head>
+  <title>MITx to Stellar</title>
+
+  <body>
+
+    <div id="title-left">
+      <h1>MITx to Stellar 8.13/14</h1>
+    </div>
+
+    <div id="title-right">
+      <p>Tutorial: </p>
+    </div>
+
+    <div id="input-part">
+      <form>
+        <textarea type="text" id="input-text" onkeyup="transform()" placeholder='Copy & paste <section class="gradebook-content"> element here following tutorial ...'></textarea>
+      </form>
+    </div>
+
+    <div id="output-part">
+      <table id="name-table">
+        <thead>
+          <tr>
+            <th width="25%">&nbsp;<br>Kerberos<br>&nbsp;</th>
+            <th width="75%">&nbsp;<br>Name<br>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody id="name-tbody">
+        </tbody>
+      </table>
+      <div id="grade-region">
+        <table id="grade-table">
+          <thead>
+            <tr id="grade-title">
+            </tr>
+          </thead>
+          <tbody id="grade-tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>
+
