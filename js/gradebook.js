@@ -75,15 +75,15 @@ function transform()
         if(i%2==1) { tr.style.backgroundColor = "#eeeeee"; }
         var kerberos = ((student_list[i].getElementsByTagName('td'))[0].getElementsByTagName('a'))[0].text;
         td_0.innerHTML = kerberos;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                // td_1.innerHTML = this.responseText;
-                td_1.innerHTML = "test";
-            }
-        }
-        xmlhttp.open("GET", "getname.php?q="+kerberos, true);
-        xmlhttp.send();
+        // var xmlhttp = new XMLHttpRequest();
+        // xmlhttp.onreadystatechange = function() {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //         // td_1.innerHTML = this.responseText;
+        //         td_1.innerHTML = "test";
+        //     }
+        // }
+        // xmlhttp.open("GET", "getname.php?q="+kerberos, true);
+        // xmlhttp.send();
 
         if(i%2==1) { grade_lines[i].style.backgroundColor = "#eeeeee"; }
         var grade_value = grade_value_lines[i].getElementsByTagName('td');
@@ -127,7 +127,7 @@ function transform()
         }
         
     }
-    var newheight = 28*(lines.length+2)+"pt";
+    var newheight = 35*(lines.length+2)+"pt";
     (document.getElementById("grade-region")).style.height = newheight;
 
 }
