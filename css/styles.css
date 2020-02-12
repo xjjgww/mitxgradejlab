@@ -49,6 +49,13 @@ th, td {
 h1 {
     font-size: 1.5vw;
 }
+a {
+    color: #206EB6;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
 
 #title-left {
     height: var(--height-top);
@@ -63,7 +70,9 @@ h1 {
     width: var(--width-right);
     position: fixed;
     top: 0;
-    right: 0;
+    left: 24vw;
+    text-align: left;
+    line-height: 0.7;
 }
 
 #input-part {
