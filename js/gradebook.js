@@ -75,6 +75,7 @@ function transform()
         if(i%2==1) { tr.style.backgroundColor = "#eeeeee"; }
         var kerberos = ((student_list[i].getElementsByTagName('td'))[0].getElementsByTagName('a'))[0].text;
         td_0.innerHTML = kerberos;
+        td_1.innerHTML = usertoname[kerberos];
         // var xmlhttp = new XMLHttpRequest();
         // xmlhttp.onreadystatechange = function() {
         //     if (this.readyState == 4 && this.status == 200) {

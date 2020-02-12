@@ -10,13 +10,13 @@ html{
     --size-font-default: 1.0rem;
     --height-body: 85vh;
     --height-top: 10vh;
-    --width-left: 23vw;
+    --width-left: 20vw;
     --margin-left: 2vw;
-    --width-right: 75vw;
-    --width-namecol: 20vw;
+    --width-right: 78vw;
+    --width-namecol: 26vw;
     --position-left-name: 2vw;
-    --width-grade: 53vw;
-    --position-left-grade: 22vw;
+    --width-grade: 50vw; /* = --width-right - --width-namecol - --position-left-name*/
+    --position-left-grade: 28vw; /* = --width-namecol + --position-left-name*/
 }
 
 body {
@@ -111,6 +111,8 @@ h1 {
     left: var(--position-left-name);
     top: 0;
     overflow-y: auto;
+    white-space: nowrap;
+    table-layout:fixed;
 }
 
 #grade-region {

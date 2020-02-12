@@ -1,0 +1,20 @@
+var usertoname = {
+    "audreysa": "Saltzman, Audrey R.",
+    "avu": "Uvarova, Anastasiia V.",
+    "bowties": "Miller, Christopher A.",
+    "c_earth": "Chotrattanapituk, Abhijatmedh",
+    "drabble": "Drabble, James Barrie",
+    "gmintzer": "Mintzer, Gabriel L.",
+    "haoyangg": "Gao, Haoyang",
+    "jwang011": "Wang, Jing",
+    "kmorey": "Morey, Karna A.",
+    "laberca": "Laber-Smith, Caroline",
+    "ldana": "Dana, L",
+    "lii": "Li, Ivy",
+    "mkdavies": "Davies, Meredith K",
+    "mlodutb": "Mloduchowski, Tomasz B",
+    "pushpa": "Prabakar, Pushpaleela",
+    "rolandg": "Roland, Gunther M",
+    "scuadra": "Cuadra, Sergio E.",
+    "spatrick": "Robinson, Sean P"
+};
